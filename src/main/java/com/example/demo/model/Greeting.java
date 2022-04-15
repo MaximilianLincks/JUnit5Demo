@@ -1,12 +1,11 @@
 package com.example.demo.model;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
+@EqualsAndHashCode
 @Getter
-@Builder
 @RequiredArgsConstructor
+@Builder
 public class Greeting {
 
     private final String from;
