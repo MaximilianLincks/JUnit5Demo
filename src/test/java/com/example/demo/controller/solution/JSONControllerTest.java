@@ -1,5 +1,6 @@
-package com.example.demo.controller;
+package com.example.demo.controller.solution;
 
+import com.example.demo.controller.JSONController;
 import com.example.demo.model.Greeting;
 import com.example.demo.service.GreetingService;
 import org.junit.jupiter.api.BeforeEach;
@@ -39,8 +40,6 @@ class JSONControllerTest {
     void setUp(){
         mockMvc = MockMvcBuilders.standaloneSetup(jsonController).build();
         greetings = new HashSet<>();
-
-
     }
 
     @Test
@@ -54,5 +53,9 @@ class JSONControllerTest {
                 .andExpect(status().isOk());
 
         verify(greetingService,times(1)).addGreeting(any(),any(),any());
+    }
+
+    @Test
+    void testGreet() {
     }
 }

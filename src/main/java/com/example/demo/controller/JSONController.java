@@ -21,14 +21,10 @@ public class JSONController {
     public Greeting greet(@PathVariable String from, @PathVariable String to, @PathVariable String greeting){
         return greetingService.addGreeting(from,to,greeting);
     }
-//TODO implement
-//    @GetMapping("/greetings/all")
-//    public Set<Greeting> getAllGreetings(){
-//        return greetingService.getGreetings();
-//    }
-//
-//    @GetMapping("/greetings/{to}")
-//    public Set<Greeting> getGreetingsTo(@PathVariable String to){
-//        return greetingService.getGreetingsTo(to);
-//    }
+
+    @GetMapping("/greetings/all")
+    public Set<Greeting> getAllGreetings(){
+        return greetingService.getGreetings();
+    }
+
 }

@@ -1,7 +1,7 @@
-package com.example.demo.controller;
+package com.example.demo.controller.solution;
 
+import com.example.demo.controller.JSONController;
 import com.example.demo.model.Greeting;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

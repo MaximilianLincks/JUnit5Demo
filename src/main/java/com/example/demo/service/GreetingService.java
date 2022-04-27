@@ -4,6 +4,7 @@ import com.example.demo.model.Greeting;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
+import java.util.Locale;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -21,15 +22,9 @@ public class GreetingService {
         greetings.add(greeting);
         return greeting;
     }
-//TODO implement
-//    public Set<Greeting> getGreetings(){
-//        return greetings;
-//    }
-//
-//    public Set<Greeting> getGreetingsTo(String receiver){
-//        return getGreetings()
-//                .stream()
-//                .filter(greeting -> greeting.getTo().equals(receiver))
-//                .collect(Collectors.toSet());
-//    }
+
+    public Set<Greeting> getGreetings(){
+        return greetings;
+    }
+
 }
