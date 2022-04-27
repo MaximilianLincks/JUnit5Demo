@@ -1,4 +1,4 @@
-package com.example.demo.controller.solution;
+package com.example.demo.controller;
 
 import com.example.demo.controller.JSONController;
 import com.example.demo.model.Greeting;
