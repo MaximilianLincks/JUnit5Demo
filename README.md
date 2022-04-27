@@ -1,9 +1,8 @@
 #Präsentation
 * Allgemeines
 * Mocks
-* TDD erklären
+
 #Vorstellung
-* Unit Tests zu besthendem Code schreiben
+* Unit Tests zu bestehendem Code schreiben
 * Mocks
-#TDD
-* Tests schriben, dann den Code
+* bei genug Zeit: Test schreiben, dann implementieren
