@@ -27,4 +27,8 @@ public class GreetingService {
         return greetings;
     }
 
+    public void deleteAll(){
+        greetings.clear();
+    }
+
 }
